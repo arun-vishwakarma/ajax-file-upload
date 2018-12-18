@@ -10,7 +10,10 @@
 		});	
 	});
 	
-	$(document).on("change", "#avatar", function() {
+	$(document).on("change", "#avatar", function(e) {
+		
+		console.log('using event ',e.target.files[0]);  //i.e e.target.files[0] or $("#avatar").prop("files")[0] both are same		
+		
 		var file_data = $("#avatar").prop("files")[0];    // Getting the properties of file from file field
 		console.log(file_data);
 		var form_data = new FormData();                   // Creating object of FormData class
