@@ -28,7 +28,7 @@
 			data: form_data,                         //Setting the data attribute of ajax with file_data
 			type: 'post',
 			success:function(resp){
-				alert(resp);
+				//alert(resp);
 				//console.log(resp); 
 				var showImg = '<img height="100" width="100" src="'+resp+'"/>';
 				$('#show-img').html(showImg);
